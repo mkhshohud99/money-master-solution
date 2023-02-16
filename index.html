@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-8">
+        <h1 class="text-center text-5xl font-bold">Money Master💰</h1>
+    </header>
+    <section class="grid grid-cols-2 gap-4 m-8">
+        <div class="left-side">
+            <img class="" src="images/money.jpg" alt="" srcset="">
+        </div>
+        <div class="right-side bg-gray-200 mx-10 text-center ">
+            <h5 class="font-bold text-lg mt-12 mb-8">Income</h5>
+            <span>Income:  </span><input id="income-value" type="number" min="0" class="form-control text-center" value="10000">
+            <h5 class="font-bold text-lg m-8">Expenses</h5>
+            <span>Food:  </span><input id="food-fild" type="number" min="0" class="form-control my-4" value="1000">
+            <br>
+            <span>Rent:  </span><input id="rent-fild" type="number" min="0" class="form-control my-4" value="300">
+            <br>
+            <span>Clothes:  </span><input id="clothes-fild" type="number" min="0" class="form-control my-4" value="200">
+            <br>
+            <button id="Calculate-btn" class="px-8 py-4 bg-sky-400 rounded-lg my-4 text-white font-bold">Calculate</button>
+            <h5 class="font-bold text-lg m-8">Total Expenses: <span id="total-expence">5500</span></h5>
+            <h5 class="font-bold text-lg m-8">Balance: <span id="sub-total">4500</span></h5>
+            <span>Clothes:  </span><input id="save-persent" type="text" min="0" class="form-control my-4" value="20">
+            <span>%</span>
+            <button id="save-btn" class="px-4 py-2 bg-sky-400 rounded-lg my-4 text-white font-bold">Save</button>
+            <br>
+            <h5 class="font-bold text-lg m-8">Saving Amount: <span id="save-display">200</span></h5>
+            <h5 class="font-bold text-lg m-8">Remaining Balance: <span id="remaining">2500</span></h5>
+
+        </div>
+        
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
